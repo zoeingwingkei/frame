@@ -1,0 +1,20 @@
+<div class="profile">
+    <div class="post-content profile-content">
+        <div class="profile-title">
+            <%=theme.profile.title%>
+        </div>
+        <div class="profile-body">
+            <%=theme.profile.body%>
+        </div>
+        <% Object.keys(theme.profile.links).forEach(key => { %>
+            <div class="profile-link">
+                <a href="<%=theme.profile.links[key]%>"><%=key%></a> 
+            </div>           
+        <% }); %>
+    </div>
+    <div class="profile-image">
+        <% if (theme.profile.image) {%>
+            <img src="<%= theme.profile.image%>" alt="featured_image">
+        <% } %>  
+    </div>
+</div>

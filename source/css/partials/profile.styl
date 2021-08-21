@@ -1,0 +1,35 @@
+.profile 
+    margin-top $margin-primary
+    display flex
+    
+    .profile-content 
+        width 50%
+        margin 0 $margin-l-0 0 0
+
+        .profile-title, .profile-body
+            margin-top 0
+            margin-bottom $margin-l-0
+
+        .profile-title
+            text-style(header-h1)
+
+        .profile-body
+            text-style(body-default)
+
+        .profile-link
+            margin-top 0
+            margin-bottom $margin-m-1
+            text-style(body-bold)
+
+    .profile-image
+        width 50%
+
+@media (max-width: 480px)
+    .profile
+        flex-wrap wrap
+        
+        .profile-content
+            width 100%
+        .profile-image
+            width 100%
+            margin-top $margin-m-1
