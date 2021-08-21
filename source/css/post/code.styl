@@ -3,7 +3,8 @@ code
     
 .code 
     pre
-        text-style(code-default)
+        span
+            text-style(code-default)
 
 .highlight
     margin 0 0 $margin-m-2 0
@@ -13,10 +14,11 @@ code
 
 td.gutter
     width $margin-l-0
-    text-style(code-marker)
     position -webkit-sticky
     position sticky
     left 0
+    span
+        text-style(code-marker)
 
 td
     span
@@ -24,5 +26,5 @@ td
 
 pre
     margin 0
-    overflow scroll
+    overflow-x scroll
 
