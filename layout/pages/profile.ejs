@@ -1,4 +1,9 @@
 <div class="profile">
+    <div class="profile-image">
+        <% if (theme.profile.image) {%>
+            <img src="<%= theme.profile.image%>" alt="featured_image">
+        <% } %>  
+    </div>
     <div class="post-content profile-content">
         <div class="profile-title">
             <%=theme.profile.title%>
@@ -12,9 +17,5 @@
             </div>           
         <% }); %>
     </div>
-    <div class="profile-image">
-        <% if (theme.profile.image) {%>
-            <img src="<%= theme.profile.image%>" alt="featured_image">
-        <% } %>  
-    </div>
+    
 </div>

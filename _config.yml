@@ -37,7 +37,7 @@ date_format: MMM D, YYYY
 profile:
   title: Frame
   body: Frame is a minimalist, elegant hexo theme.
-  image: /1897/01/01/Water-Lilies-and-Japanese-Bridge/cover.jpeg
+  image: https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/profile_cover.png
 
   links:
     About Frame: /about/
@@ -58,5 +58,5 @@ footer:
     content: Frame is a minimalist, elegant hexo theme.
 
 # color mode
-color_mode: default
+color_mode: classic
 

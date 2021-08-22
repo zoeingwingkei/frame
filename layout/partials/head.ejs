@@ -40,6 +40,11 @@ if (is_archive()){
     <link rel="icon" href="<%- url_for(theme.favicon) %>">
 <% } %>
 
+<%# font %>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+</style>
+
 <%# css list %>
 <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
     <!-- stylesheets list from _config.yml -->
@@ -67,3 +72,4 @@ if (is_archive()){
         <% } %>
     <% } %>
 <% } %>
+

@@ -8,24 +8,27 @@
   font-family 'roboto-mono'
   src url('../fonts/roboto_mono/RobotoMono-Regular.ttf')
 
+// Font family
+$font-family-main = inter, 'Noto Sans SC', helvetica, arial
+
 // Text Style
 text-style(n)
   if n == 'body-default'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-body
     font-variation-settings: 'wght' $font-weight-regular
     line-height $line-height-body
     color $color-text-primary
 
   else if n == 'body-bold'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-body
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-body
     color $color-text-primary
 
   else if n == 'body-italic'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-body
     font-variation-settings 'wght' $font-weight-regular
     font-style italic
@@ -33,7 +36,7 @@ text-style(n)
     color $color-text-primary
   
   else if n == 'body-delete'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-body
     font-variation-settings: 'wght' $font-weight-regular
     line-height $line-height-body
@@ -59,56 +62,56 @@ text-style(n)
     color $color-code-marker
 
   else if n == 'header-h1'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h1
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-header-h1
     color $color-text-primary
 
   else if n == 'header-h2'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h2
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-header-h2
     color $color-text-primary
 
   else if n == 'header-h3'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h3
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-header-h3
     color $color-text-primary
 
   else if n == 'header-h4'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h4
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-header-h4
     color $color-text-primary
 
   else if n == 'header-h5'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h5
     font-variation-settings: 'wght' $font-weight-semibold
     line-height $line-height-header-h5
     color $color-text-primary
 
   else if n == 'header-h6'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header-h6
     font-variation-settings: 'wght' $font-weight-medium
     line-height $line-height-header-h6
     color $color-text-primary
 
   else if n == 'footer'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-footer
     font-variation-settings: 'wght' $font-weight-regular
     line-height $line-height-footer
     color $color-text-primary
 
   else if n == 'header'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-header
     font-variation-settings: 'wght' $font-weight-medium
     line-height $line-height-header
@@ -116,7 +119,7 @@ text-style(n)
     color $color-text-primary
 
   else if n == 'post-date'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-post-date
     font-variation-settings: 'wght' $font-weight-regular
     line-height $line-height-post-date
@@ -124,14 +127,14 @@ text-style(n)
     color $color-text-primary
 
   else if n == 'year-title'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-year-title
     font-variation-settings: 'wght' $font-weight-bold
     line-height $line-height-year-title
     color $color-text-primary
 
   else if n == 'post-tag'
-    font-family inter, helvetica, arial
+    font-family $font-family-main
     font-size $font-size-post-tag
     font-variation-settings: 'wght' $font-weight-medium
     line-height $line-height-post-tag
