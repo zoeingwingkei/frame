@@ -62,14 +62,9 @@ if (is_archive()){
 <% } %>
 
 <%# mathjax support %>
-<% if(theme.mathjax.enable!==null&&theme.mathjax.enable===true){ %>
-    <%# import mathjax method: global or demand %>
-    <% if(theme.mathjax.import === 'global'){ %>
-        <%- partial('_plugins/mathjax.ejs') %>
-    <% } else if(theme.mathjax.import === 'demand'){ %>
-        <% if (page.mathjax){ %>
-            <%- partial('_plugins/mathjax.ejs') %>
-        <% } %>
-    <% } %>
+<% if(theme.mathjax_enable){ %>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <% } %>
+
 

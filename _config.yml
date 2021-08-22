@@ -60,3 +60,7 @@ footer:
 # color mode
 color_mode: classic
 
+# mathjax setting
+# note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
+mathjax_enable: true
+
