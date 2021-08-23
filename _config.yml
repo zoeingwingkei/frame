@@ -3,13 +3,13 @@
 language: en
 
 # main menu navigation
-site_brand_name: Frame
+site_brand_name: Frame.
 
 menu:
-  home: /
-  archive: /archives/
-  gallery: /categories/gallery/
-  about: /about/
+  Home: /
+  Archive: /archives/
+  Gallery: /categories/gallery/
+  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -57,7 +57,7 @@ footer:
     enable: true
     content: Frame is a minimalist, elegant hexo theme.
 
-# color mode
+# color mode: default / classic / dark
 color_mode: classic
 
 # mathjax setting
