@@ -35,8 +35,8 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Frame
-  body: Frame is a minimalist, elegant hexo theme.
+  title: Hi, this is Frame. 
+  body: A minimalist, elegant hexo theme.
   image: https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/profile_cover.png
 
   links:
