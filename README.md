@@ -1,5 +1,3 @@
-# Frame
-
 ![cover](https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/hexo_cover.jpg)
 
 Frame is a minimalist hexo theme. Inspired by traditional paintings and their frames, **Frame** is designed to showcase personal blogs, profiles, or portfolios in a concise and elegant way.
