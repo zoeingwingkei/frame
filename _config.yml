@@ -3,13 +3,13 @@
 language: en
 
 # main menu navigation
-site_brand_name: Frame
+site_brand_name: Frame.
 
 menu:
-  home: /
-  archive: /archives/
-  gallery: /categories/gallery/
-  about: /about/
+  Home: /
+  Archive: /archives/
+  Gallery: /categories/gallery/
+  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -35,13 +35,13 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Frame
-  body: Frame is a minimalist, elegant hexo theme.
+  title: Hi, this is Frame. 
+  body: A minimalist, elegant hexo theme.
   image: https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/profile_cover.png
 
   links:
     About Frame: /about/
-    Blog Tests: /tags/test/
+    Blog Tests: /tags/Test/
     Gallery View: /categories/gallery/
 
 # footer
@@ -57,8 +57,8 @@ footer:
     enable: true
     content: Frame is a minimalist, elegant hexo theme.
 
-# color mode
-color_mode: classic
+# color mode: default / classic / dark
+color_mode: dark
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math

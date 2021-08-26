@@ -19,7 +19,7 @@
 var title = page.title;
 
 if (is_archive()){
-    title = __('ARCHIVE');
+    title = __('Archive');
 
     if (is_month()){
         title += ': ' + page.year + '/' + page.month;
@@ -27,9 +27,9 @@ if (is_archive()){
         title += ': ' + page.year;
     }
 } else if (is_category()){
-    title = __('CATEGORY') + ': ' + page.category;
+    title = __('Category') + ': ' + page.category;
 } else if (is_tag()){
-    title = __('TAG') + ': ' + page.tag;
+    title = __('Tag') + ': ' + page.tag;
 }
 %>
 
