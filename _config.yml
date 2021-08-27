@@ -58,7 +58,7 @@ footer:
     content: Frame is a minimalist, elegant hexo theme.
 
 # color mode: default / classic / dark
-color_mode: dark
+color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
