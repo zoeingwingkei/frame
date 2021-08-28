@@ -2,7 +2,7 @@
 # html lang
 language: en
 
-# main menu navigation
+# header
 site_brand_name: Frame.
 
 menu:
@@ -19,15 +19,6 @@ stylesheets:
 scripts:
 - /js/frame.js
 
-# plugin functions
-## Mathjax: Math Formula Support
-## https://www.mathjax.org
-mathjax:
-  enable: true
-  import: demand # global or demand
-  ## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.
-  ## demand: Recommend option,if your post need fomula, you can declare 'mathjax: true' in Front-matter
-
 # favicon
 favicon: /favicon.ico
 
@@ -37,7 +28,7 @@ date_format: MMM D, YYYY
 profile:
   title: Hi, this is Frame. 
   body: A minimalist, elegant hexo theme.
-  image: https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/profile_cover.png
+  image: /profile_cover.png
 
   links:
     About Frame: /about/
@@ -50,7 +41,7 @@ footer:
     enable: true
     author: © Yonqqi
 
-  powered_by:
+  powered_by: # Powered by Hexo & Frame
     enable: true
 
   other_info:
@@ -58,7 +49,7 @@ footer:
     content: Frame is a minimalist, elegant hexo theme.
 
 # color mode: default / classic / dark
-color_mode: dark
+color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
