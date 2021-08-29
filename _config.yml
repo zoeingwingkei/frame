@@ -9,7 +9,6 @@ menu:
   Home: /
   Archive: /archives/
   Gallery: /categories/gallery/
-  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -27,31 +26,29 @@ date_format: MMM D, YYYY
 # profile
 profile:
   title: Hi, this is Frame. 
-  body: A minimalist, elegant hexo theme.
+  body: A minimal, elegant hexo theme.
   image: /profile_cover.png
 
   links:
-    About Frame: /about/
-    Blog Tests: /tags/Test/
-    Gallery View: /categories/gallery/
+    Home: /
+    Blogs: /archives/
 
 # footer
 footer:
   copyright_info:
-    enable: true
-    author: © Yonqqi
+    enable: false
+    author:
 
   powered_by: # Powered by Hexo & Frame
     enable: true
 
   other_info:
-    enable: true
-    content: Frame is a minimalist, elegant hexo theme.
+    enable: false
+    content:
 
 # color mode: default / classic / dark
 color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
-mathjax_enable: true
-
+mathjax_enable: false
