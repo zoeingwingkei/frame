@@ -4,6 +4,8 @@
 
 Frame 是一个极简风格的 hexo 主题。Frame 的主题设计如同一个简洁优雅的画框，适合用来展示你的个人博客或者作品集。
 
+[👉 示例网站](https://frame.zhangyongqi.com/)
+
 ## 开始使用
 
 ### 安装
