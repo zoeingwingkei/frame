@@ -1,4 +1,4 @@
-English | [简体中文](../about-cn/)
+English | [简体中文](README-CN.md)
 
 ![cover](https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/hexo_cover.jpg)
 
@@ -65,7 +65,7 @@ featured_image: /path/to/your/image.jpg
 
 ## Profile Page
 
-The profile page, or the home page, is the very first page of your site. By default, there is a title, some body text, several links and a profile image on this page. You can customize the content of your profile at the `config.yml` file of the theme:
+The profile page, or the home page, is the very first page of your site. By default, there is a title, some body text, several links and a profile image on this page. You can customize the content of your profile at the `config.yml` file of the theme:
 
 ```
 # profile
