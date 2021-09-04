@@ -1,138 +1,111 @@
-// Inter
-@font-face
-  font-family 'inter'
-  src url('../fonts/inter/Inter.ttf')
-
-// Roboto Mono
-@font-face
-  font-family 'roboto-mono'
-  src url('../fonts/roboto_mono/RobotoMono-Regular.ttf')
-
-// Font family
-$font-family-main = inter, 'Noto Sans SC', helvetica, arial
-
 // Text Style
 text-style(n)
   if n == 'body-default'
-    font-family $font-family-main
+    font-family 'Inter', 'Noto Sans SC', helvetica, arial
     font-size $font-size-body
-    font-variation-settings: 'wght' $font-weight-regular
+    font-weight $font-weight-regular
     line-height $line-height-body
     color $color-text-primary
 
   else if n == 'body-bold'
-    font-family $font-family-main
     font-size $font-size-body
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-body
     color $color-text-primary
 
   else if n == 'body-italic'
-    font-family $font-family-main
     font-size $font-size-body
-    font-variation-settings 'wght' $font-weight-regular
+    font-weight $font-weight-regular
     font-style italic
     line-height $line-height-body
     color $color-text-primary
   
   else if n == 'body-delete'
-    font-family $font-family-main
     font-size $font-size-body
-    font-variation-settings: 'wght' $font-weight-regular
+    font-weight $font-weight-regular
     line-height $line-height-body
     text-decoration line-through
     color $color-text-primary
 
   else if n == 'code-default'
-    font-family roboto-mono, menlo, monospace
+    font-family 'Roboto Mono', menlo, monospace;
     font-size $font-size-code
     line-height $line-height-code
     color $color-code-default
 
   else if n == 'code-highlight'
-    font-family roboto-mono, menlo, monospace
+    font-family 'Roboto Mono', menlo, monospace;
     font-size $font-size-code
     line-height $line-height-code
     color $color-code-highlight
 
   else if n == 'code-marker'
-    font-family roboto-mono, menlo, monospace
+    font-family 'Roboto Mono', menlo, monospace;
     font-size $font-size-code
     line-height $line-height-code
     color $color-code-marker
 
   else if n == 'heading-h1'
-    font-family $font-family-main
     font-size $font-size-heading-h1
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-heading-h1
     color $color-text-primary
 
   else if n == 'heading-h2'
-    font-family $font-family-main
     font-size $font-size-heading-h2
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-heading-h2
     color $color-text-primary
 
   else if n == 'heading-h3'
-    font-family $font-family-main
     font-size $font-size-heading-h3
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-heading-h3
     color $color-text-primary
 
   else if n == 'heading-h4'
-    font-family $font-family-main
     font-size $font-size-heading-h4
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-heading-h4
     color $color-text-primary
 
   else if n == 'heading-h5'
-    font-family $font-family-main
     font-size $font-size-heading-h5
-    font-variation-settings: 'wght' $font-weight-semibold
+    font-weight $font-weight-semibold
     line-height $line-height-heading-h5
     color $color-text-primary
 
   else if n == 'heading-h6'
-    font-family $font-family-main
     font-size $font-size-heading-h6
-    font-variation-settings: 'wght' $font-weight-medium
+    font-weight $font-weight-medium
     line-height $line-height-heading-h6
     color $color-text-primary
 
   else if n == 'footer'
-    font-family $font-family-main
     font-size $font-size-footer
-    font-variation-settings: 'wght' $font-weight-regular
+    font-weight $font-weight-regular
     line-height $line-height-footer
     color $color-text-primary
 
   else if n == 'header'
-    font-family $font-family-main
     font-size $font-size-header
-    font-variation-settings: 'wght' $font-weight-medium
+    font-weight $font-weight-medium
     line-height $line-height-header
     color $color-text-primary
 
   else if n == 'post-date'
-    font-family $font-family-main
     font-size $font-size-post-date
-    font-variation-settings: 'wght' $font-weight-regular
+    font-weight $font-weight-regular
     line-height $line-height-post-date
     color $color-text-primary
 
   else if n == 'year-title'
-    font-family $font-family-main
     font-size $font-size-year-title
-    font-variation-settings: 'wght' $font-weight-bold
+    font-weight $font-weight-bold
     line-height $line-height-year-title
     color $color-text-third
 
   else if n == 'post-tag'
-    font-family $font-family-main
     font-size $font-size-post-tag
-    font-variation-settings: 'wght' $font-weight-medium
+    font-weight $font-weight-medium
     line-height $line-height-post-tag
