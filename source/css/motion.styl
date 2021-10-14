@@ -1,24 +1,24 @@
 underline-motion(n)
     if n == 'link'
         background-image linear-gradient($color-background, $color-background), linear-gradient($color-text-primary, $color-text-primary)
-        background-size 100% $margin-s-0, 0% $margin-s-0
+        background-size 100% $line-third, 0% $line-third
         background-position 100% 100%, 0 100%
         background-repeat no-repeat, no-repeat
         transition background-size .6s linear
 
         &:hover 
-            background-size 0 $margin-s-0, 100% $margin-s-0
+            background-size 0 $line-third, 100% $line-third
 
     else if n == 'underline-link'
-        padding-bottom $margin-s-1
+        padding-bottom $line-secondary
         background-image linear-gradient($color-text-primary, $color-text-primary), linear-gradient($color-text-primary, $color-text-primary)
-        background-size 100% $margin-s-0, 0 $margin-s-1
+        background-size 100% $line-third, 0 $line-secondary
         background-position 100% 100%, 0 100%
         background-repeat no-repeat, no-repeat
         transition background-size .6s linear
 
         &:hover 
-            background-size 100% $margin-s-0, 100% $margin-s-1
+            background-size 100% $line-third, 100% $line-secondary
 
     else if n == 'header'
         &:after
