@@ -1,0 +1,21 @@
+<div class="post-comment">
+    <div id="vcomments"></div>
+    <% if (theme.valine.enable) {%>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = '<%=theme.valine.meta%>';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: '<%=theme.valine.appId%>',
+                appKey: '<%=theme.valine.appKey%>',
+                lang: '<%=theme.valine.lang%>',
+                placeholder: '<%=theme.valine.placeholder%>',
+                avatar: '<%=theme.valine.avatar%>',
+                meta: meta
+            })
+        </script>    
+    <% } %> 
+</div>

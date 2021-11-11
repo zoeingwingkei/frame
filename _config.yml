@@ -9,6 +9,7 @@ menu:
   Home: /
   Archive: /archives/
   Gallery: /categories/gallery/
+  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -30,8 +31,9 @@ profile:
   image: /profile_cover.png
 
   links:
-    Home: /
-    Blogs: /archives/
+    About Frame: /about/
+    Blog Test: /tags/Test/
+    Gallery View: /categories/gallery/
 
 # footer
 footer:
@@ -47,8 +49,18 @@ footer:
     content:
 
 # color mode: default / classic / dark
-color_mode: classic
+color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
 mathjax_enable: false
+
+# comments
+valine:
+  enable: true
+  appId: 'kQAT2f4fLoSmoQ651oxncOEC-gzGzoHsz'
+  appKey: 'ot0D2vrgc8NnGw5ulFjKMFRl'
+  lang: 'en'
+  placeholder: 'Say something'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
