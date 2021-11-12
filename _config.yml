@@ -6,14 +6,13 @@ language: en
 site_brand_name: Frame.
 
 logo_image:
-  enable: true
+  enable: false
   image_path: /logo.png # path to your logo image
 
 menu:
   Home: /
   Archive: /archives/
   Gallery: /categories/gallery/
-  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -35,9 +34,8 @@ profile:
   image: /profile_cover.png
 
   links:
-    About Frame: /about/
-    Blog Test: /tags/Test/
-    Gallery View: /categories/gallery/
+    Home: /
+    Blogs: /archives/
 
 # footer
 footer:
@@ -57,19 +55,19 @@ color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
-mathjax_enable: true
+mathjax_enable: false
 
 # comments: support disqus and valine
 valine: # valine setup guide: https://valine.js.org/quickstart.html
-  enable: true
-  appId: 'kQAT2f4fLoSmoQ651oxncOEC-gzGzoHsz' # Your valine app Id
-  appKey: 'ot0D2vrgc8NnGw5ulFjKMFRl' # Your valine app Key
+  enable: false
+  appId: # Your valine app Id
+  appKey: # Your valine app Key
   lang: 'en'
   placeholder: 'Say something'
   avatar: 'mp'
   meta: ['nick', 'mail']
 
 disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publisher-quick-start-guide
-  enable: true
-  disqus_url: 'https://kay-space.disqus.com/embed.js' # your diqsuq url or shortname
+  enable: false
+  disqus_url: # your diqsuq url or shortname
   language: 'en'
