@@ -53,14 +53,18 @@ color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
-mathjax_enable: false
+mathjax_enable: true
 
 # comments
 valine:
-  enable: true
-  appId: 'kQAT2f4fLoSmoQ651oxncOEC-gzGzoHsz'
-  appKey: 'ot0D2vrgc8NnGw5ulFjKMFRl'
+  enable: false
+  appId: 'YOUR_APP_ID'
+  appKey: 'YOUR_APP_KEY'
   lang: 'en'
   placeholder: 'Say something'
   avatar: 'mp'
   meta: ['nick', 'mail']
+
+disqus:
+  enable: false
+  disqus_url: 'https://DISQUS_SHORTNAME.disqus.com/embed.js'
