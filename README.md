@@ -105,11 +105,15 @@ layout: tag
 
 ### Header
 
-The header is simply consist of a site brand name and a navigation menu, you can change those content at the `config.yml` file under the theme folder.
+The header is simply consist of a site logo and a navigation menu, you can change those content at the `config.yml` file under the theme folder. You can upload an image as the site logo, otherwise it would be your site name.
 
 ```
 # header
-site_brand_name: Your site name
+site_brand_name: Frame.
+
+logo_image:
+  enable: true
+  image_path: /logo.png # path to your logo image
 
 menu:
   Home: /
@@ -160,6 +164,10 @@ Note: if you haven't install the hexo math plugin, you need to install it first:
 ```
 npm i hexo-math --save
 ```
+
+### Blog Comments
+
+Frame now supports third-party comment systems: [valine](https://valine.js.org/) and [disqus](https://disqus.com/). A detailed description can be found in [this post](https://frame.zhangyongqi.com/2021/11/11/comment/).
 
 ## Lisense
 
