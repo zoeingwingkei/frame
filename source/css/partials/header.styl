@@ -2,6 +2,7 @@
     border $line-secondary solid $color-text-primary
     text-style(header)
 
+
 .header-inner
     display flex
     flex-wrap nowrap
@@ -34,21 +35,26 @@
     border-bottom solid $line-secondary 
     width 100%
 
+.logo-img
+    max-height $line-height-heading-h1
+    width auto
+    max-width 100%
+    display flex
+
 @media (max-width: 688px)
     .header-inner
         flex-wrap wrap
         #menu-btn
             display block!important
             text-align right
-            min-width 50%
-            width auto
+            width 50%
+            
             .icon
                 float right
 
         .site-brand-container
-            min-width 50%
-            width auto
-
+            width 50%
+            
         .site-nav
             width 100%
             .menu-list

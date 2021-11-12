@@ -5,6 +5,10 @@ language: en
 # header
 site_brand_name: Frame.
 
+logo_image:
+  enable: true
+  image_path: /logo.png # path to your logo image
+
 menu:
   Home: /
   Archive: /archives/
@@ -55,17 +59,17 @@ color_mode: default
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
 mathjax_enable: true
 
-# comments
-valine:
-  enable: false
-  appId: 'YOUR_APP_ID'
-  appKey: 'YOUR_APP_KEY'
+# comments: support disqus and valine
+valine: # valine setup guide: https://valine.js.org/quickstart.html
+  enable: true
+  appId: 'kQAT2f4fLoSmoQ651oxncOEC-gzGzoHsz' # Your valine app Id
+  appKey: 'ot0D2vrgc8NnGw5ulFjKMFRl' # Your valine app Key
   lang: 'en'
   placeholder: 'Say something'
   avatar: 'mp'
   meta: ['nick', 'mail']
 
-disqus:
-  enable: false
-  disqus_url: 'https://DISQUS_SHORTNAME.disqus.com/embed.js'
+disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publisher-quick-start-guide
+  enable: true
+  disqus_url: 'https://kay-space.disqus.com/embed.js' # your diqsuq url or shortname
   language: 'en'

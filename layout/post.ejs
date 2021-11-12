@@ -4,7 +4,7 @@
     <%- partial('post/post_head') %>
     <%- partial('post/post_content') %>
     <%- partial('post/post_footer') %>
-    <% if (page.enable_comment) {%>
+    <% if (!page.hide_comment) {%>
       <%- partial('post/post_comment') %>
     <% } %> 
   <%} else {%>
