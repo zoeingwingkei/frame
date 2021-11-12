@@ -68,3 +68,4 @@ valine:
 disqus:
   enable: false
   disqus_url: 'https://DISQUS_SHORTNAME.disqus.com/embed.js'
+  language: 'en'
