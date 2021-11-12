@@ -1,10 +1,8 @@
-English | [简体中文](README-CN.md)
+English | [简体中文](../about-cn/)
 
 ![cover](https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/featured_img/hexo_cover.jpg)
 
 Frame is a minimal hexo theme. Inspired by traditional paintings and their frames, Frame is designed to showcase personal blogs, profiles, or portfolios in a concise and elegant way.
-
-[👉 Demo Site](https://frame.zhangyongqi.com/)
 
 ## Getting started
 
@@ -67,7 +65,7 @@ featured_image: /path/to/your/image.jpg
 
 ## Profile Page
 
-The profile page, or the home page, is the very first page of your site. By default, there is a title, some body text, several links and a profile image on this page. You can customize the content of your profile at the `config.yml` file of the theme:
+The profile page, or the home page, is the very first page of your site. By default, there is a title, some body text, several links and a profile image on this page. You can customize the content of your profile at the `config.yml` file of the theme:
 
 ```
 # profile
@@ -105,11 +103,15 @@ layout: tag
 
 ### Header
 
-The header is simply consist of a site brand name and a navigation menu, you can change those content at the `config.yml` file under the theme folder.
+The header is simply consist of a site logo and a navigation menu, you can change those content at the `config.yml` file under the theme folder. You can upload an image as the site logo, otherwise it would be your site name.
 
 ```
 # header
-site_brand_name: Your site name
+site_brand_name: Frame.
+
+logo_image:
+  enable: true
+  image_path: /logo.png # path to your logo image
 
 menu:
   Home: /
@@ -161,9 +163,12 @@ Note: if you haven't install the hexo math plugin, you need to install it first:
 npm i hexo-math --save
 ```
 
+### Blog Comments
+
+Frame now supports third-party comment systems: [valine](https://valine.js.org/) and [disqus](https://disqus.com/). A detailed description can be found in [this post](https://frame.zhangyongqi.com/2021/11/11/comment/).
+
 ## Lisense
 
 This project is released under [MIT License](https://opensource.org/licenses/MIT).
 
 All the images used in the [demo site](https://frame.zhangyongqi.com) are the works from Claude Monet (1840 - 1926), which is considered to be in the public domain in its country of origin and other countries and areas.
-
