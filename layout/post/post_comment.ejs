@@ -1,0 +1,48 @@
+<div class="post-comment">
+
+    <% if (theme.valine.enable) {%>
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = '<%=theme.valine.meta%>';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: '<%=theme.valine.appId%>',
+                appKey: '<%=theme.valine.appKey%>',
+                lang: '<%=theme.valine.lang%>',
+                placeholder: '<%=theme.valine.placeholder%>',
+                avatar: '<%=theme.valine.avatar%>',
+                meta: meta
+            })
+        </script>    
+    <% } %> 
+
+    <% if (theme.disqus.enable) {%>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = '<%=page.permalink%>';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '<%=page.path%>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = '<%=theme.disqus.language%>'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '<%=theme.disqus.disqus_url%>';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+    <% } %> 
+    
+    
+
+</div>

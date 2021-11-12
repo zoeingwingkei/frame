@@ -2,7 +2,13 @@
   <div class="flex-container">
     <div class="header-inner">
       <div class="site-brand-container">
-        <a href="/"><%= theme.site_brand_name %></a>
+        <a href="/">
+          <% if (theme.logo_image.enable) {%>
+            <img class="logo-img" src="<%= theme.logo_image.image_path%>" alt="logo_image">
+          <%} else {%>
+            <%= theme.site_brand_name %>
+          <% } %>
+        </a>
       </div>
       <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
         Menu
