@@ -1,75 +1,42 @@
-
-# html lang
-language: en
-
-# header
 site_brand_name: Frame.
 
 logo_image:
-  enable: true
+  enable: false
   image_path: /logo.png # path to your logo image
 
 menu:
   Home: /
   Archive: /archives/
   Gallery: /categories/gallery/
-  About: /about/
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/style.css
-
-# scripts loaded in the end of the body
-scripts:
-- /js/frame.js
-
-# favicon
-favicon: /favicon.ico
-
-date_format: MMM D, YYYY
-
-# profile
-profile:
-  title: Hi, this is Frame. 
-  body: A minimal, elegant hexo theme.
+	@@ -34,8 +35,9 @@ profile:
   image: /profile_cover.png
 
   links:
-    About Frame: /about/
-    Blog Test: /tags/Test/
-    Gallery View: /categories/gallery/
+    Home: /
+    Blogs: /archives/
 
 # footer
 footer:
-  copyright_info:
-    enable: false
-    author:
-
-  powered_by: # Powered by Hexo & Frame
-    enable: true
-
-  other_info:
-    enable: false
-    content:
-
-# color mode: default / classic / dark
-color_mode: default
+	@@ -55,19 +57,19 @@ color_mode: default
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
-mathjax_enable: true
+mathjax_enable: false
 
 # comments: support disqus and valine
 valine: # valine setup guide: https://valine.js.org/quickstart.html
-  enable: true
-  appId: 'kQAT2f4fLoSmoQ651oxncOEC-gzGzoHsz' # Your valine app Id
-  appKey: 'ot0D2vrgc8NnGw5ulFjKMFRl' # Your valine app Key
+  enable: false
+  appId: # Your valine app Id
+  appKey: # Your valine app Key
   lang: 'en'
   placeholder: 'Say something'
   avatar: 'mp'
   meta: ['nick', 'mail']
 
 disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publisher-quick-start-guide
-  enable: true
-  disqus_url: 'https://kay-space.disqus.com/embed.js' # your diqsuq url or shortname
+  enable: false
+  disqus_url: # your diqsuq url or shortname
   language: 'en'
