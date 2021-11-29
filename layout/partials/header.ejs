@@ -2,9 +2,9 @@
   <div class="flex-container">
     <div class="header-inner">
       <div class="site-brand-container">
-        <a href="/">
+        <a href="<%= url_for()%>">
           <% if (theme.logo_image.enable) {%>
-            <img class="logo-img" src="<%= theme.logo_image.image_path%>" alt="logo_image">
+            <img class="logo-img" src="<%= url_for(theme.logo_image.image_path)%>" alt="logo_image">
           <%} else {%>
             <%= theme.site_brand_name %>
           <% } %>
@@ -18,11 +18,11 @@
           <% Object.keys(theme.menu).forEach(key => { %>
             <% if (url_for(theme.menu[key]) + "index.html" == url_for(page.path)) {%>
               <li class="menu-item menu-item-active">
-                <a href="<%=theme.menu[key]%>"><%=key%></a>
+                <a href="<%=url_for(theme.menu[key])%>"><%=key%></a>
               </li> 
             <%} else {%>
               <li class="menu-item">
-                <a href="<%=theme.menu[key]%>"><%=key%></a>
+                <a href="<%=url_for(theme.menu[key])%>"><%=key%></a>
               </li> 
             <% }%>       
           <% }); %>

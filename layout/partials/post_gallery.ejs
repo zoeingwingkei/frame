@@ -29,7 +29,7 @@
                 </div>
                 <div class="post-img">
                 <% if (post.featured_image) {%>
-                    <img src="<%= post.featured_image%>" alt="featured_image">
+                    <img src="<%= url_for(post.featured_image)%>" alt="featured_image">
                 <% } %>  
                 </div>
             </div>

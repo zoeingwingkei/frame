@@ -26,7 +26,7 @@
     </div>
     <div class="post-img">
         <% if (page.featured_image) {%>
-            <img src="<%= page.featured_image%>" alt="featured_image">
+            <img src="<%= url_for(page.featured_image)%>" alt="featured_image">
         <% } else { %>
             <div class="h-line-primary"></div>
         <% } %>      
