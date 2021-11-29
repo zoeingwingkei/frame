@@ -103,11 +103,15 @@ layout: tag
 
 ### 页头
 
-主题的页头由网站名和菜单栏组成，你可以在主题文件夹下的 `config.yml` 文件里修改这些配置。
+主题的页头由网站 Logo 和菜单栏组成，你可以在主题文件夹下的 `config.yml` 文件里修改这些配置。在默认的状态下，网站 Logo 为你的网站名，你也可以自行上传图片作为你的网站 Logo。
 
 ```
 # header
-site_brand_name: Your site name
+site_brand_name: Frame.
+
+logo_image:
+  enable: true
+  image_path: /logo.png # path to your logo image
 
 menu:
   Home: /
@@ -157,6 +161,11 @@ mathjax_enable: true
 ```
 npm i hexo-math --save
 ```
+
+### 评论系统
+
+Frame 现在支持的第三方评论系统有：[valine](https://valine.js.org/) 和 [disqus](https://disqus.com/)。详细的用法介绍请参考[这篇文章](https://frame.zhangyongqi.com/2021/11/11/comment/)。
+
 
 ## 版权
 
