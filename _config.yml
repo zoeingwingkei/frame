@@ -21,6 +21,7 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/frame.js
+- /js/language.js
 
 # favicon
 favicon: /favicon.ico
@@ -71,3 +72,7 @@ disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publis
   enable: false
   disqus_url: # your diqsuq url or shortname
   language: 'en'
+
+# language switch
+language_switch:
+  enable: true

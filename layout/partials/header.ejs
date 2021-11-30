@@ -31,3 +31,9 @@
     </div>
   </div>
 </div>
+
+<% if (theme.language_switch.enable) {%>
+  <script>
+    window.onload = detectLanguage();
+  </script>
+<% } %>
