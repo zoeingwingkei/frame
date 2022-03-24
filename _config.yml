@@ -1,18 +1,20 @@
 
 # html lang
-language: en
+language: zh-CN
 
 # header
-site_brand_name: Frame.
+site_brand_name: TechNoLogi.
 
 logo_image:
   enable: false
-  image_path: /logo.png # path to your logo image
+  image_path:  /logo.png # path to your logo image
 
 menu:
-  Home: /
-  Archive: /archives/
-  Gallery: /categories/gallery/
+  "主页": /
+  "文章": /archives/
+  "游戏": /meta/
+  # - Gallery: /categories/gallery/
+  "标签": /tag/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -29,29 +31,33 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Hi, this is Frame. 
-  body: A minimal, elegant hexo theme.
+  title: 您好，这里是TechNoLogi
+  body: 只谈论技术和生活
   image: /profile_cover.png
 
   links:
-    Home: /
-    Blogs: /archives/
+    "主页": /
+    "文章": /archives/
+    "存储": https://cloud.ruofengx.cn/
+    "关于": /info/
+    "隐私策略": /privacy/
 
 # footer
 footer:
   copyright_info:
-    enable: false
-    author:
+    enable: true
+    author: Ruofeng
 
   powered_by: # Powered by Hexo & Frame
     enable: true
 
   other_info:
-    enable: false
+    enable: true
     content:
+      京ICP备19041354号-1
 
 # color mode: default / classic / dark
-color_mode: default
+color_mode: classic
 
 # mathjax setting
 # note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
