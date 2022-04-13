@@ -36,10 +36,10 @@ profile:
   image: /profile_cover.png
 
   links:
-    "主页": /
+    # "主页": /
     "文章": /archives/
     "存储": https://cloud.ruofengx.cn/
-    "关于": /info/
+    # "关于": /info/
     "隐私策略": /privacy/
 
 # footer
