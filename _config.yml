@@ -13,7 +13,7 @@ menu:
   "主页": /
   "文章": /archives/
   "游戏": /meta/
-  # - Gallery: /categories/gallery/
+  "画廊": /categories/gallery/  # TODO: 后期有需要就打开，需要确认图片路径模式
   "标签": /tag/
 
 # stylesheets loaded in the <head>
