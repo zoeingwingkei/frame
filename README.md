@@ -169,7 +169,7 @@ npm i hexo-math --save
 
 Frame now supports third-party comment systems: [valine](https://valine.js.org/) and [disqus](https://disqus.com/). A detailed description can be found in [this post](https://frame.zhangyongqi.com/2021/11/11/comment/).
 
-## Lisense
+## License
 
 This project is released under [MIT License](https://opensource.org/licenses/MIT).
 
