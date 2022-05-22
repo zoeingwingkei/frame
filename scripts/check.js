@@ -1,3 +1,5 @@
+// Modified base on https://github.com/ppoffice/hexo-theme-minos/blob/master/scripts/01_check.js
+
 const fs = require('fs');
 const path = require('path');
 const logger = require('hexo-log')();

@@ -1,3 +1,5 @@
+// Modified base on https://github.com/ppoffice/hexo-theme-minos/blob/master/scripts/10_i18n.js
+
 const _ = require('lodash');
 const util = require('hexo-util');
 const postGenerator = require('hexo/lib/plugins/generator/post');

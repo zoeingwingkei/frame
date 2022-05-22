@@ -1,3 +1,5 @@
+// Modified base on https://github.com/ppoffice/hexo-theme-minos/blob/master/scripts/99_config.js
+
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
