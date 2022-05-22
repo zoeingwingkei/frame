@@ -1,17 +1,7 @@
 <div id="tag">
-  <% if(is_tag()){ %>
-
-    <p class="tag-title">
-      / <a href="<%=url_for(/tag/)%>">tags</a>
-      / <a href="<%=page.tag.path%>"><%=page.tag%></a> /
-    </p>
-    <%- partial('partials/post_list') %>
-
-  <% }else{ %>
-
-    <p class="tag-title">/ tags /</p>
-    <%- partial('partials/tag_cloud') %>
-    
-  <% } %>
-
+  <p class="tag-title">
+    / <a href="<%=url_for(i18n_path(page.lang, config.tag_dir))%>">tags</a>
+    / <a href="<%=page.tag.path%>"><%=page.tag%></a> /
+  </p>
+  <%- partial('partials/post_list') %>
 </div>

@@ -1,6 +1,6 @@
 <div class="tag-cloud">
   <div class="tag-list">
-    <%site.tags.forEach(tag=>{%>
+    <%(page._tags).forEach(tag=>{%>
       <span class="post-tag">
         <a href="<%-url_for(tag.path)%>">
           <%=tag.name%>

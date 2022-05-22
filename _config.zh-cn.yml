@@ -1,0 +1,31 @@
+
+# html lang
+language: zh-cn
+
+menu:
+  主页: /
+  文章: /archives/
+  画廊: /categories/gallery/
+
+# profile
+profile:
+  title: 你好，这是 Frame
+  body: 一个既小又优雅的 hexo 主题.
+  image: /profile_cover.png
+
+  links:
+    文章: /archives/
+    标签: /tags/
+
+# comments: support disqus and valine
+valine: # valine setup guide: https://valine.js.org/quickstart.html
+  enable: true
+  appId: 
+  appKey: 
+  lang: 'zh-cn'
+  placeholder: '说点什么'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
+
+alternative_lang: en
+alternative_lang_label: En

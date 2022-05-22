@@ -5,7 +5,7 @@
            <%if (page.prev) {%>
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="<%=url_for(page.prev.path)%>">Prev</a>
+                    <a href="<%=url_for(page.prev.path)%>"><%=__('nav.prev')%></a>
                 </div>
             <%}%>
         </div>
@@ -13,7 +13,7 @@
             <%if (page.next) {%>
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="<%=url_for(page.next.path)%>">Next</a>  
+                  <a href="<%=url_for(page.next.path)%>"><%=__('nav.next')%></a>  
                 </div>  
             <%}%>
         </div>

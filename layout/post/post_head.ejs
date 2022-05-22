@@ -4,7 +4,7 @@
             <% if (page.tags && page.tags.data && page.tags.data.length > 0) {%>
                 <% page.tags.data.forEach(function(tag) { %>
                     <span class="post-tag">
-                        <a href="<%-url_for(tag.path)%>">
+                        <a href="<%-url_for(get_tag_path(tag))%>">
                             <%=tag.name%>
                         </a>
                     </span>    

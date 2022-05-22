@@ -1,19 +1,20 @@
+<% var profile = get_config('profile') %>
 <div class="profile">
     <div class="profile-image">
-        <% if (theme.profile.image) {%>
+        <% if (profile.image) {%>
             <img src="<%= url_for(theme.profile.image)%>" alt="featured_image">
         <% } %>  
     </div>
     <div class="post-content profile-content">
         <div class="profile-title">
-            <%=theme.profile.title%>
+            <%=profile.title%>
         </div>
         <div class="profile-body">
-            <%=theme.profile.body%>
+            <%=profile.body%>
         </div>
-        <% Object.keys(theme.profile.links).forEach(key => { %>
+        <% Object.keys(profile.links).forEach(key => { %>
             <div class="profile-link">
-                <a href="<%= url_for(theme.profile.links[key])%>"><%=key%></a> 
+                <a href="<%= url_for(profile.links[key])%>"><%=key%></a> 
             </div>           
         <% }); %>
     </div>

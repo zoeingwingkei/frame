@@ -1,0 +1,30 @@
+# html lang
+language: en
+
+menu:
+  Home: /en
+  Archives: /en/archives/
+  Gallery: /en/categories/gallery/
+
+# profile
+profile:
+  title: Hi, this is Frame. 
+  body: A minimal, elegant hexo theme.
+  image: /profile_cover.png
+
+  links:
+    Archives: /en/archives/
+    Tags: /en/tags/
+
+# comments: support disqus and valine
+valine: # valine setup guide: https://valine.js.org/quickstart.html
+  enable: true
+  appId: 
+  appKey: 
+  lang: 'en'
+  placeholder: 'Say something'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
+
+alternative_lang: zh-cn
+alternative_lang_label: 中文
