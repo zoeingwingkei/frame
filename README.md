@@ -82,7 +82,7 @@ profile:
   	Projects: /categories/gallery/
 ```
 
-In case you prefer to customize your profile page, go to `frame/layout/pages/profile.ejs` and modify the layout and style of your own page, have fun 🙌
+In case you prefer to customize your profile page, go to `frame/layout/pages/profile.ejs` and modify the layout and style of your own page, have fun 🙌.
 
 ## Tag Page
 
