@@ -71,3 +71,12 @@ disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publis
   enable: false
   disqus_url: # your diqsuq url or shortname
   language: 'en'
+
+# local search
+local_search:
+  enable: true
+  place_holder: Search Anything
+  trigger: auto # auto: trigger search whenever input changes
+  top_n_per_article: 1 # show top n results per article, show all results by setting to -1
+  unescape: false # unescape html strings to the readable one
+  preload: false # reload the search data when the page loads, this will accelerate the search process
