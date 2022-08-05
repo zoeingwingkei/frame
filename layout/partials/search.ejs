@@ -1,0 +1,30 @@
+<div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="<%=theme.local_search.place_holder%>" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "<%=url_for(config.search.path)%>",
+        top_n_per_article: "<%=theme.local_search.top_n_per_article%>",
+        unescape         : "<%=theme.local_search.unescape%>",
+        trigger: "<%=theme.local_search.trigger%>",
+        preload: "<%=theme.local_search.preload%>"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>

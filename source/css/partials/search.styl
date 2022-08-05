@@ -1,0 +1,88 @@
+.search-popup 
+    visibility hidden
+    
+.search-activate
+    visibility visible
+
+.search-popup-overlay
+    position fixed
+    left 0
+    top 0
+    height 100%
+    width 100%
+    background $color-overlay
+
+.search-popup-window
+    position absolute
+    top 50%
+    left 50%
+    background $color-background
+    transform translate(-50%, -50%)
+    width 640px
+    height 60%
+    border $line-secondary solid $color-text-primary
+    overflow hidden
+    display flex
+    flex-direction column
+
+.search-result-container
+    flex-grow 1
+    overflow: scroll
+    padding $margin-m-1 $margin-m-1
+
+    .search-result-message
+        text-style(search-result-message)
+        color $color-text-secondary
+
+    .search-result-title
+        text-style(heading-h4)
+        color $color-text-primary
+
+    a 
+        underline-motion(link)
+
+    li 
+        padding-bottom $margin-m-1
+        padding-top $margin-m-2
+
+    .search-result
+        text-style(body-default)
+        color $color-text-primary
+        margin-top $margin-m-0
+        margin-bottom $margin-m-0
+
+    mark
+        color $color-text-primary
+        background-color $color-search-marker 
+
+.search-header
+    display flex
+    flex-direction row
+    align-items center
+    padding $margin-m-1 $margin-m-1
+    border-bottom $line-secondary solid $color-text-primary
+
+    .search-input-container
+        flex-grow 1
+
+        .search-input
+            width 100%
+            text-style(heading-h6)
+            color $color-text-primary
+            background-color $color-background
+
+        .search-input::placeholder
+            color $color-text-secondary
+                
+
+    .search-close-btn
+        flex-grow 0
+        margin-left $margin-m-1
+        margin auto
+        cursor pointer
+
+    
+@media (max-width: 688px)
+    .search-popup-window
+        width 100%
+        height 100%
