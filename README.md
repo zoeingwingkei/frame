@@ -169,6 +169,10 @@ npm i hexo-math --save
 
 Frame now supports third-party comment systems: [valine](https://valine.js.org/) and [disqus](https://disqus.com/). A detailed description can be found in [this post](https://frame.zhangyongqi.com/2021/11/11/comment/).
 
+### Local Search
+
+Frame now supports local search with the hexo plugin [hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb).  A detailed description can be found in [this post](https://frame.zhangyongqi.com/2022/08/05/local-search/).
+
 ## License
 
 This project is released under [MIT License](https://opensource.org/licenses/MIT).
