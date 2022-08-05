@@ -166,6 +166,9 @@ npm i hexo-math --save
 
 Frame 现在支持的第三方评论系统有：[valine](https://valine.js.org/) 和 [disqus](https://disqus.com/)。详细的用法介绍请参考[这篇文章](https://frame.zhangyongqi.com/2021/11/11/comment/)。
 
+### 本地搜索
+
+Frame 现在支持使用 [hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb) 的本地搜索功能。详细的用法介绍请参考[这篇文章](https://frame.zhangyongqi.com/2022/08/05/local-search/)。
 
 ## 版权
 
