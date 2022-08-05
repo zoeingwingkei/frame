@@ -68,6 +68,8 @@ if (is_archive()){
 <% } %>
 
 <%# valine comment support %>
-<script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+<% if(theme.valine.enable){ %>
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+<% } %>
 
 
