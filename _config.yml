@@ -74,7 +74,7 @@ disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publis
 
 # local search
 local_search:
-  enable: true
+  enable: false
   place_holder: Search Anything
   trigger: auto # auto: trigger search whenever input changes
   top_n_per_article: 1 # show top n results per article, show all results by setting to -1
