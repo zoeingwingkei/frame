@@ -20,7 +20,7 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-- /js/frame.js
+- /js/menu.js
 
 # favicon
 favicon: /favicon.ico
