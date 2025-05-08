@@ -62,6 +62,7 @@ valine: # valine setup guide: https://valine.js.org/quickstart.html
   enable: false
   appId: # Your valine app Id
   appKey: # Your valine app Key
+  serverURLs: # Your valine REST API URL
   lang: 'en'
   placeholder: 'Say something'
   avatar: 'mp'
